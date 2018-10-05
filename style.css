@@ -329,7 +329,7 @@ footer{
 		width: 1000px;
 		margin: 0 auto;
 		padding: 5px;
-		border: 1px solid gray;
+	
 	}
 /*Header*/
 		.headerMob{
@@ -370,7 +370,7 @@ footer{
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-between;
-			border: 1px solid var(--main--bg_light);
+			margin-top: 20px;
 
 		}
 		.sponsorsLogoMob{
@@ -386,7 +386,7 @@ footer{
 /*Sponsor*/
 		.sponsorsLogo img{
 			width: 100%;
-			border: 1px solid var(--main--bg_light);
+			
 		}
 		.sponsorItem{
 			margin-bottom: 10px;
@@ -395,34 +395,54 @@ footer{
 /*eventPage*/
 .eventPage{
 	width: 650px;
-	border: 1px solid var(--main--bg_light);
+	color:  var(--main--bg_light);
+	
 }
-.eventName{
-	color: var(--main-color_white);
-}
-header{
+
+.headerEventPage{
 	display: flex;
 	justify-content: space-between;
 }
-.headertMenu{
+.headerLinks{
 	display: flex;
-	margin-top: 10px;
+	margin: 20px 0;
 }
-.headertMenu li{
+.headerLinks li{
 list-style: none;
-margin-right: 20px;
+margin: 0 50px 0 0 ;
 }
 
-.eventMenu a,
-.eventMenu a:visited,
-.eventMenu a:active{
-	color: var(--main-color);
-	font-weight: bold;
+.eventPage a,
+.eventPage a:visited,
+.eventPage a:active{
+	color: var(--main-color_white);
+	text-decoration-line: underline;
+}
+.headerInfo span{
+	margin-right: 10px;
+	opacity: .75;
+	font-size: .89em
+}
+.socialLinks{
+	display: flex;
+}
+.socialLinks li{
+	list-style: none;
+	margin-right: 30px;
 }
 
+.headerEventPage,
+.generalEventInfo,
+article{
+	margin-bottom: 30px;
+}
+.generalEventInfo p{
+	opacity: .85;
+	font-size: .97em
+}
 
 footer{
-	margin: 20px 0;
+	margin: 30px 0;
 	color: var(--main-color);
 }
 }
