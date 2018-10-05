@@ -376,9 +376,7 @@ footer{
 		.sponsorsLogoMob{
 			display: none;
 		}
-		.eventSection{
-		
-		}
+	
 		.sponsorsLogo{
 			width: 320px;
 		}
@@ -396,9 +394,10 @@ footer{
 .eventPage{
 	width: 650px;
 	color:  var(--main--bg_light);
-	
 }
-
+.eventName{
+	margin-bottom: 20px;
+}
 .headerEventPage{
 	display: flex;
 	justify-content: space-between;
