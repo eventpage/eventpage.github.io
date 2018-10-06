@@ -38,34 +38,36 @@ body{
 
 /*---MOBILE---*/
 @media (max-width: 640px){
+	.container{
+		padding: 5px;
+	}
 .header{
   display: none;
 }
 .headerMob{
   display: flex;  
 	align-items: center;  
+	justify-content: space-between;
 	color: var(--main-color);
 	font-size: 15px;
 }
   .headerMob .logo img{
-		width: 110px;
-		margin: 5px 0 0 5px;
+		width: 140px;
 	}
 	.headerSocialMenu{
 		display: flex;
 		justify-content: space-around;
 	}
 	header .headerSocialMenu,
-	header .logo,
-	header .headerMenu{
-  width: 33%;
+	header .logo{
+  width: 45%;
 }
 
 /*---MAIN---*/
- main{
-   display: flex;
-   flex-direction: column;
- }
+main{
+  display: flex;
+  flex-direction: column;
+}
 	.sponsorsLogo{
 		display: none;
 	}
@@ -77,101 +79,75 @@ body{
 			width: 100px;
 			margin: 5px;
 		}
-			
-		/*Nav*/	
-		nav{
-			width: 100%;
-			overflow: scroll;
-			background: rgba(255, 255, 255, 0.281);
-		}
-		.navMenu{
-			display: flex;
-		}
-		.navItem{
-			border: 1px solid var(--main--bg_light);
-			border-left: none;
-		}
-
-		/*Filters*/
-		.filterMenu{
-			display: flex;
-			justify-content: space-between;
-			margin: 10px 0;
-			color: var(--main-color_white);
-		}
-		.filterItem{
-			width: 30%;
-			
-		}
-		select{
-			width: 100%;
-			color: var(--main-color);
-			font-weight: 700;
-		}
-
-/*--EVENT--*/
-.month{
-	text-transform: uppercase;
-	text-decoration: underline ;
-	color: var(--main-color);
-	margin: 5px 0;
-}
-
-.listEvent{
+		
+	.eventPage{
+		padding: 5px;
+		color: var(--main-color_white);
+	}
+	.eventName{
+		font-size: 1.8em;
+		margin-bottom: 10px;
+	}
+	.eventName span{
+		font-size: .64em;
+	}
+	.headerInfo p{
+		line-height: 1.2;
+	}
+	.headerInfo span{
+		margin-right: 10px;
+		opacity: .75;
+		font-size: .89em;
+	}
+	.promoImg img{
+		width: 310px;
+	}
+	.registration{
+		margin: 20px 0;
+	}
+	p .linkButton{
+		border: 1px solid var(--main--bg_light);
+		background: var(--main--bg_light); /* Рамка */
+		padding: 5px 15px; /* Поля */
+		text-decoration: none!important; 
+		color: var(--main-color)!important;
+	}
+	.linkButton:hover{
+		box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+		background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+		color: var(--main-color); /* Цвет текста */
+	}
+.eventPage a,
+.eventPage a:visited,
+.eventPage a:active{
 	color: var(--main-color_white);
+	text-decoration-line: underline;
 }
-.listEvent a,
-.listEvent a:active{
-	color: var(--main-color_white);
-}
-.listHead,
-.listContent{
+
+.socialLinks{
 	display: flex;
-	width: 100%;
-	border-bottom: 1px solid gray;
-	padding: 5px;
+	flex-flow: row wrap;
+	line-height: 33px;
 }
-.listHead{
-	text-transform: uppercase;
-	font-weight: 700;
-	color: var(--main-color);
-	background: var(--main--bg_light);
+.socialLinks li{
+	list-style: none;
+	margin-right: 30px;
 }
-.dateEvent{
-	min-width: 45px;
-	width: 13%;
-	text-align: center;
-	align-self: center;
+
+.headerEventPage,
+.generalEventInfo,
+article{
+	margin-bottom: 30px;
 }
-.nameEvent{
-	min-width: 160px;
-	width: 55%;
-	align-self: center;
-	text-align: left;
-	padding: 0 10px;
-	display: flex;
-	flex-direction: column;
-	text-transform: uppercase;
+.generalEventInfo p{
+	opacity: .85;
+	font-size: .95em
 }
-.orgEvent{
-	display: none;
-}
-.mobOrgEvent{
-	font-size: 0.8em;
-	align-self:flex-start;
-	text-transform: none;
-}
-.locEvent{
-	min-width: 100px;
-	width: 22%;
-	align-self: center;
-	text-align: left;
-	padding: 0 5px;
-}
-footer{
-	margin: 20px 0;
-	color: var(--main-color);
-}
+
+	footer{
+		margin: 20px 0;
+		color: var(--main-color);
+	}
 }
 
 
@@ -401,7 +377,6 @@ footer{
 	font-size: 2em;
 }
 .eventName span{
-
 	font-size: 0.6em;
 }
 .headerInfo p{
@@ -459,7 +434,7 @@ article{
 }
 .generalEventInfo p{
 	opacity: .85;
-	font-size: .97em
+	font-size: .95em
 }
 
 
