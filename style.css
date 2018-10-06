@@ -326,10 +326,7 @@ footer{
 /*---DESKTOP---*/
 @media (min-width: 1020px) {
 	.container{ 
-		width: 1000px;
-		margin: 0 auto;
-		padding: 5px;
-	
+		padding: 15px;
 	}
 /*Header*/
 		.headerMob{
@@ -392,23 +389,52 @@ footer{
 
 /*eventPage*/
 .eventPage{
-	width: 650px;
+	width: 70%;
 	color:  var(--main--bg_light);
-}
-.eventName{
-	margin-bottom: 20px;
 }
 .headerEventPage{
 	display: flex;
 	justify-content: space-between;
 }
-.headerLinks{
-	display: flex;
-	margin: 20px 0;
+.eventName{
+	margin-bottom: 20px;
+	font-size: 2em;
 }
-.headerLinks li{
-list-style: none;
-margin: 0 50px 0 0 ;
+.eventName span{
+
+	font-size: 0.6em;
+}
+.headerInfo p{
+	line-height: 1.7;
+}
+.headerInfo span{
+	margin-right: 10px;
+	opacity: .75;
+	font-size: .89em;
+}
+.promoImg img{
+	width: 400px;
+}
+
+.registration{
+	margin-top: 25px;
+}
+p .linkButton{
+	border: 1px solid var(--main--bg_light);
+	background: var(--main--bg_light); /* Рамка */
+	padding: 5px 15px; /* Поля */
+	text-decoration: none!important; 
+	color: var(--main-color)!important;
+}
+.linkButton:hover{
+	box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+  background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+  color: var(--main-color); /* Цвет текста */
+}
+
+h4{
+	font-size: 1.2em;
+	margin-bottom: 5px;
 }
 
 .eventPage a,
@@ -417,11 +443,7 @@ margin: 0 50px 0 0 ;
 	color: var(--main-color_white);
 	text-decoration-line: underline;
 }
-.headerInfo span{
-	margin-right: 10px;
-	opacity: .75;
-	font-size: .89em
-}
+
 .socialLinks{
 	display: flex;
 }
@@ -439,6 +461,8 @@ article{
 	opacity: .85;
 	font-size: .97em
 }
+
+
 
 footer{
 	margin: 30px 0;
