@@ -4,165 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SportCalendar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Кануполо турнір</title>
+    <link rel="stylesheet" href="pageEvent.css">
     
 </head>
 <body>
     
 <div class="container">
-
-    <header class="header">  
-            <a href="https://sportcalendar.github.io/" class="logo">
-                <img src="img/SC_logo_vert.svg"  alt="">
-            </a>
-            
-            <div class="headerMenu">
-                <a href="#" class="social-item">ОРГАНІЗАТОРАМ</a>
-                <a href="#" class="social-item">УЧАСНИКАМ</a>
-            </div>
-            
-            <div class="headerSocialMenu">
-                <a href="#" class="social-item">Fb</a>
-                <a href="#" class="social-item">Tlg</a>
-                <a href="#" class="social-item">In</a>
-            </div>
-            
-    </header>
- 
-    <header class="headerMob">
-        
-        <a href="#" class="logo">
-            <img src="img/SC_logo_vert.svg"  alt="">
-        </a>
-        
-        <div class="headerMenu">
-            <a href="#" class="socialItem">ОРГАНІЗАТОРАМ</a>
-        </div>
-    </header> 
-
     
-    <main>
-    <!-- SPONSOR section -->
-        <section class="sponsorsLogo">
-            <div class="sponsorItem borika">
-                <a href="">
-                    <img src="img/sponsors/borika.png" alt="">
-                    <!-- <div class="about-sponsor">Borika</div> -->
-                </a>
-            </div>        
-            <div class="sponsorItem rapid">
-                <a href="">
-                    <img src="img/sponsors/rapid.png" alt="">
-                    <!-- <div class="about-sponsor">Rapid</div> -->
-                </a>
-            </div>
-            <div class="sponsorItem neris">
-                <a href="">
-                    <img src="img/sponsors/neris.png" alt="">
-                    <!-- <div class="about-sponsor">Neris</div> -->
-                </a>
-            </div>     
-            <div class="sponsorItem kolibri">
-                <a href="">
-                    <img src="img/sponsors/kolibri.png" alt="">
-                    <!-- <div class="about-sponsor">Kolibri</div> -->
-                </a>
-            </div>
-        </section>  
+  <header class="header"> 
+        <div class="headerLogo">
+            <img src="img/logo_red.png" alt="">
+        </div> 
         
-        <section class="sponsorsLogoMob">
-                   
-            <div class="sponsorItem rapid">
-                <a href="">
-                    <img src="img/sponsors/mob/mob-rapid.png" alt="">
-                    <!-- <div class="about-sponsor">Rapid</div> -->
+        <div class="menuContent">
+            <ul class="headerMenu">
+                <li><a href="#" class="social-item calendar">КАЛЕНДАР</a></li>
+                <li><a href="#" class="social-item">ТУРИ</a></li>
+                <li><a href="#" class="social-item">ШКОЛИ</a></li>
+                <li><a href="#" class="social-item">МАГАЗИНИ</a></li>
+                <li><a href="#" class="social-item">ПРОКАТИ</a></li>
+                <li><a href="#" class="social-item">ФОРУМ</a></li>
+            </ul>    
+                
+            <ul class="headerSocialMenu">
+                <li><a href="#" class="social-item">Fb</a></li>
+                <li><a href="#" class="social-item">Tlg</a></li>
+                <li><a href="#" class="social-item">In</a></li>
+            </ul>         
+        </div> 
+               
+  </header>
+ 
+  <header class="headerMob">
+        <div class="headerTop">
+            <section class="logo">
+                <a href="#">
+                    <img src="img/logo_red.png"  alt="">
                 </a>
-            </div>
-            <div class="sponsorItem neris">
-                <a href="">
-                    <img src="img/sponsors/mob/mob-neris.png" alt="">
-                    <!-- <div class="about-sponsor">Neris</div> -->
-                </a>
-            </div>     
-            <div class="sponsorItem kolibri">
-                <a href="">
-                    <img src="img/sponsors/mob/mob-kolibri.png" alt="">
-                    <!-- <div class="about-sponsor">Kolibri</div> -->
-                </a>
-            </div>
-            <div class="sponsorItem borika">
-                <a href="">
-                    <img src="img/sponsors/mob/mob-borika.png" alt="">
-                    <!-- <div class="about-sponsor">Borika</div> -->
-                </a>
-            </div> 
-            <div class="sponsorItem ordana">
-                <a href="">
-                    <img src="img/sponsors/mob/mob-ordana.png" alt="">
-                    <!-- <div class="about-sponsor">Borika</div> -->
-                </a>
-            </div> 
-        </section> 
-    <!-- end SPONSOR section -->
+            </section>
+            <section>=</section>
+        </div>
 
-        <section class="eventPage">
-
-            <div class="headerEventPage">
-                <section class="promoInfo">
-                    <h1 class="eventName">Архіпелаг-О <br>
-                        <span>Фестиваль водного орієнтування</span>
-                    </h1>
+        <div class="headerBottom">
+            <section>
+            <!-- FILTERS -->
+            <div class="filterMenuMob">
+                    <div class="dateEventFilter filterItem">
+                        <!-- <label for="">Місяць</label><br> -->
+                        <select>
+                            <option selected>Дата</option>
+                            <option class="sportName">Квітень</option>
+                            <option class="sportName">Травень</option>
+                            <option class="sportName">Грудень</option>
+                            <option class="sportName">Січень</option>
+                        </select>
+                    </div>        
+    
+                    <div class="CategoryFilter filterItem">
+                        <!-- <label for="">Спорт</label><br> -->
+                        <select>
+                            <option selected>Види спорту</option>
+                            <option class="sportName">Вейкбордінг</option>
+                            <option class="sportName">САПбордінг</option>
+                            <option class="sportName">Кайтсьорфінг</option>
+                            <option class="sportName">Віндсьорфінг</option>
+                        </select>
+                    </div>
+                    <div class="locEventFilter filterItem">
+                        <!-- <label for="">Локація</label> <br> -->
+                        <select>
+                            <option selected>Місто</option>
+                            <option class="sportName">Дніпро</option>
+                            <option class="sportName">Вінниця</option>
+                            <option class="sportName">Харків</option>
+                            <option class="sportName">Черкаси</option>
+                        </select>
+                    </div>
                     
-                    <section class="headerInfo">
-                        <p><span>Дата:</span> 01-03 червня</p>
-                        <p><span>Місце:</span> <a href=""> Дніпро, Самарські Плавні</a></p>
-                        <p><span>Організатор:</span> <a href="http://life-n-action.com/">Life-n-Action.com</a> </p>
-                        <p><span>Вартість:</span> 500 грн</p>
-                        <p class="registration"><a href="#" class="linkButton">Реєстрація</a></p>
-                    </section>
-                </section>
+                    
+                </div> 
+                <!-- FILTERS end-->
+            </section>
+            
+        </div>              
 
-                <section class="promoImg">
-                    <img src="img/eventPromo/arhipelag.jpg" alt="">
-                </section>
+  </header> 
+
+  <main>
+    <!--OHTER CHAPTERS SECTION-->
+    <section class="eventPage">
+        <div class="titleEventPage">
+            <strong>Кануполо. Перший етап кубку України</strong>
+        </div>
+
+        <!--HEADER EventPage SECTION-->
+        <section class="headerEventPage">
+            <!--INFO EventPage -->
+            <div class="infoEvent">
+                <p><strong class="infoEventItem">Дата</strong> 13-14 травня</p>
+                <p><strong class="infoEventItem">Локація</strong> Київ, Оболонська набережна</p>
+                <p><strong class="infoEventItem">Організатор</strong> Федерація Кануполо України</p>
+                <p><strong class="infoEventItem">Вартість</strong> 700 грн з команди</p>
+                <button>Реєстрація на подію</button>
             </div>
 
-            <div class="generalEventInfo">
-                <article>
-                    <h4>Опис події</h4>
-                    <p>Ориентирование на байдарках, являясь не самым молодым направлением в нашем спорте, развивается в мире не самыми быстрыми темпами из-за частого отсутствия специфической местности для проведения соревнований, водные просторы которой должны быть также интересны для спортсмена, как и простой лес. </p>
-                    <br>
-                    <br>
-                    <h4>Регламент</h4>
-                    <p> Арена старт/фініш нічних змагань (1.06.2018) і дистанції по вибору (3.06.2018) розташована безпосередньо у центрі змагань; арена класичної дистанції (2.06.2018) знаходиться в 400м на захід від центру змагань по асфальтовій дорозі. <a href="https://www.facebook.com/events/2091143327785362/permalink/2091150064451355/" class="detailEvent">Детальніше >></a> </p>
-                </article>
-                <section class="socialSection">
-                    <ul class="socialLinks">
-                        <li><a href="">Facebook</a> </li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Messanger</a></li>
-                        <li><a href="">Telegram</a></li>
-                        <li><a href="">Viber</a></li>
-                    </ul>
-                </section>
+            <!--VIDEO EventPage -->
+            <div class="videoEvent">
+                <iframe width="320" height="190" 
+                src="https://www.youtube.com/embed/JZFTTxdDbIs" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>        
             </div>
+        </section>
+        <section class="mainEventPage"></section>
+    </section>
+    <!--end OHTER CHAPTERS SECTION-->
+
+    <!--OHTER CHAPTERS SECTION-->
+    <section class="otherChapters">
+            <div class="titleotherChapters">
+                <strong>Додаткові розділи</strong>
+            </div>
+            <div class="item">
+                Страховки спортивні 
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Фото. Відео. Монтаж
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Дрони 
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Сервіси ремонту        
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Барахолки             
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Курси інструкторів                  
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Робота                        
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Форум                  
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Пошук компанії
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Інтервю видатних аматорів                
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Музика для спорту                
+            </div><!--Фест водного спорту end-->
+            
+            <div class="item">
+                Фіьми                
+            </div><!--Фест водного спорту end-->
+
+            <div class="item">
+                Лекції і семінари                
+            </div><!--Фест водного спорту end-->
             
 
-        </section>
+    </section>
+    <!--end OHTER CHAPTERS SECTION-->
+  </main>
 
-
-    </main>
-
-    <footer class="footer">
-        <!-- <section> Веб-розробка: IT schooll "Frontend-Science"</section>
-        <section> Розробка лого і промо картинок: Студія Kovalen.com</section> -->
-        <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, eligendi et esse autem tempore suscipit expedita reprehenderit nemo corrupti ratione quidem voluptas, minima sed quaerat error officia velit tempora quisquam.</section>
-    </footer>
-          
-</div> <!--End container-->
-
-</body>
-</html>
-
-
+</div><!--end Container-->
